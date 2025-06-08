@@ -8,7 +8,7 @@ def display_menu():
 
 def main():
     shopping_list = []
-    choice = int(input("Choose a number from 1 to 4 "))
+    choice = int(input("Enter the item to add: "))
 
     while True:
         display_menu()
