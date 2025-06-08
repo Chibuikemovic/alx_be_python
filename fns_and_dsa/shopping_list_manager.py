@@ -4,10 +4,11 @@ def display_menu():
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
-choice = int(input("Choose a number from 1 to 4 "))
+
 
 def main():
     shopping_list = []
+    choice = int(input("Choose a number from 1 to 4 "))
 
     while True:
         display_menu()
