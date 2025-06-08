@@ -1,24 +1,26 @@
 shopping_list = []
 
-def show_menu():
+def display_menu():
     print("\n===== Shopping List Menu =====")
     print("1. Add item")
     print("2. Remove item")
     print("3. View list")
     print("4. Exit")
+    
+display_menu()
 
 def add_item():
     item = input("Enter item to add: ").strip()
     shopping_list.append(item)
-    print(f"✅ '{item}' has been added to your shopping list.")
+    print(f"'{item}' has been added to your shopping list.")
 
 def remove_item():
     item = input("Enter item to remove: ").strip()
     if item in shopping_list:
         shopping_list.remove(item)
-        print(f"❌ '{item}' has been removed from your shopping list.")
+        print(f"'{item}' has been removed from your shopping list.")
     else:
-        print(f"⚠️ '{item}' not found in your shopping list.")
+        print(f"'{item}' not found in your shopping list.")
 
 def view_list():
     print("\n Your Shopping List:")
@@ -30,7 +32,7 @@ def view_list():
 
 # Main loop
 while True:
-    show_menu()
+    display_menu()
     choice = input("Select an option (1-4): ").strip()
 
     if choice == '1':
