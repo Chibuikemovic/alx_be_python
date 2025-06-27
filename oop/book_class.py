@@ -15,4 +15,5 @@ class Book:
         
     
 book = Book("1984", "George Orwell", 1949)
-print(book)  
+print(book) 
+print(repr(book))
