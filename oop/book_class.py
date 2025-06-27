@@ -14,6 +14,3 @@ class Book:
         print(f"Deleting {self.title}")
         
     
-book = Book("1984", "George Orwell", 1949)
-print(book) 
-print(repr(book))
